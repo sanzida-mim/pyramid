@@ -4,9 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2vmin;
+            width: 65vmin;
+            margin: 2rem auto;
+            text-align: center;
+        }
+
+        #submit_btn, input {
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+        }
+
+        #pd_area {
+            text-align: center;
+            font-size: 30px;
+            min-width: 60vmin;
+            min-height: 30vmin;
+            padding: 2rem;
+        }
+
+        #inv_btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2rem auto;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello JS!</h1>
+    <h1>Let's Create a JavaScript Pyramid</h1>
+    
+    <form id="input_form">
+        <label for="char_input">What do you want to build your pyramid with?</label>
+        <input autofocus id="char_input" placeholder="i.e... @ / ! / #" type="text">
+        <button id="submit_btn" type="submit">Create</button>
+    </form>
+
+    <p name="pyramid" id="pd_area"></p>
+    <button id="inv_btn">Invert</button>
+
     <script src="script.js"></script>
 </body>
 </html>
