@@ -1,0 +1,36 @@
+body{
+    text-align: center;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vmin;
+    width: 65vmin;
+    margin: 2rem auto;
+}
+
+#submit_btn, input {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+#pd_area {
+    text-align: center;
+    font-size: 30px;
+    min-width: 60vmin;
+    min-height: 30vmin;
+    padding: 2rem;
+}
+
+#inv_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    display: none;
+}
